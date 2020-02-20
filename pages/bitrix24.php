@@ -5,13 +5,16 @@ curl_setopt_array($myCurl, [
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_POST => true,
     CURLOPT_POSTFIELDS => http_build_query([
-        'fields'=>[
-            "NAME"=>$_POST['name'],
-            "PHONE"=>[
-                $_POST['cellphone'],'WORK'
+        'fields' => [
+            "NAME" => $_POST['name'],
+            'PHONE' => [
+                [
+                    'VALUE' => $_POST['cellphone'],
+                    'VALUE_TYPE' => 'HOME'
+                ]
             ],
-            "COMMENTS"=>$_POST['comment']
-    ]])
+            "COMMENTS" => $_POST['comment']
+        ]])
 ]);
 $response = curl_exec($myCurl);
 curl_close($myCurl);

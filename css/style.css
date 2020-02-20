@@ -12,9 +12,18 @@ ul, li {
     background: #d7252c;
 }
 
+.menu-li {
+    margin-left: 35px;
+    width: 214.72px;
+}
 
 .menu-bar-nav {
     background: #d7252c;
+}
+
+.catalog-font{
+    margin-left: 5px;
+    margin-right: 7px;
 }
 
 .menu__item {
@@ -59,8 +68,8 @@ ul, li {
 .button-cart {
     background: #fa3f3e;
     color: white;
-    padding: 10px 50px 10px 20px !important;
-    font-size: 12px;
+    padding: 12px 50px 12px 20px !important;
+    font-size: 14px;
 !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -70,12 +79,16 @@ ul, li {
 }
 
 .cat-container {
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 16px 25px 0px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 16px 25px 0px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 16px 25px 0px rgba(0, 0, 0, 0.17);
 }
 
 .yandex-container {
     padding-left: 0 !important;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.17);
 }
 
 .ins-container {
@@ -132,11 +145,11 @@ ul, li {
     font-size: 14px;
 }
 
-.li-cat a{
+.li-cat a {
     color: black;
 }
 
-.li-cat a:hover{
+.li-cat a:hover {
     color: #7c7b7b;
     text-decoration: none;
 }
@@ -154,7 +167,6 @@ ul, li {
 .col-gift {
     padding-left: 0;
 }
-
 
 .swiper-container {
     width: 837px;
@@ -329,14 +341,81 @@ ul, li {
     color: #000000;
 }
 
-.feedback-ul li{
+.feedback-ul li {
     display: block;
 }
 
-.footer-bottom{
+.footer-bottom {
     background-color: #e40000;
     color: white;
     font-size: 12px;
     padding-bottom: 15px;
     padding-top: 15px;
+}
+
+.smart-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .yandex-container, .menu, .ins-container, .menu-top-left, .catalog-item, .menu-bar-nav, .submenu {
+        display: none;
+    }
+
+    .container{
+        max-width: 900px;
+    }
+
+    .callback {
+        font-size: 14px;
+        margin-left: 405px;
+    }
+
+    .menu-bar {
+        padding-bottom: 10px;
+    }
+
+    .smart-menu {
+        display: block;
+        margin-left: 5px;
+        margin-right: 1px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu-icon {
+        background-color: white;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 9px 13px 9px 13px;
+    }
+
+    .menu-li {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .menu-li li {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .swiper-container {
+        width: auto;
+    }
+
+    .choose-me {
+        margin-left: 50px;
+    }
+
+    .feedback-call{
+        font-size: 14px;
+    }
+
+    .s2{
+        font-size: 20px;
+        height: 300px;
+    }
 }
